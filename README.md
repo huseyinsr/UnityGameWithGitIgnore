@@ -8,3 +8,5 @@ tutorial 0
 tutorial 1
 
 ![ezgif-65827e7a73d9e7](https://github.com/user-attachments/assets/b70fd486-9d99-4635-bb5c-96a0b2edea68)
+
+[script van tutorial 1]()
