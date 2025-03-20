@@ -12,7 +12,9 @@ tutorial 1
 [script van tutorial 1](myFirstUnityGame/Assets/Scripts/movement.cs)
 
 tutorial 2
+
 ![ezgif-7cfeff71bf6d66](https://github.com/user-attachments/assets/728103cf-120d-4e81-bebc-298955c2bb4f)
 
-[script van tutorial 2]((myFirstUnityGame/Assets/Scripts/MoveBasic.cs)
-[script van tutorial 2]((myFirstUnityGame/Assets/Scripts/Animate.cs)
+[script van tutorial 2](myFirstUnityGame/Assets/Scripts/MoveBasic.cs)
+
+[script van tutorial 2](myFirstUnityGame/Assets/Scripts/Animate.cs)
