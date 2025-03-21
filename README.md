@@ -21,7 +21,7 @@ tutorial 2
 
 tutorial 3 
 
-![ezgif-21d6c24bc84b61](https://github.com/user-attachments/assets/29bc9e08-6565-464f-ac56-94e29e3789f8)
+![ezgif-2f0ee9391de172](https://github.com/user-attachments/assets/cdb2c6e8-ed08-4ea3-9886-b6288546bd3a)
 
 [1e script van tutorial 3](myFirstUnityGame/Assets/Scripts/MoveBasic.cs)
 
