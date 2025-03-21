@@ -15,6 +15,29 @@ tutorial 2
 
 ![ezgif-7cfeff71bf6d66](https://github.com/user-attachments/assets/728103cf-120d-4e81-bebc-298955c2bb4f)
 
-[script van tutorial 2](myFirstUnityGame/Assets/Scripts/MoveBasic.cs)
+[1e script van tutorial 2](myFirstUnityGame/Assets/Scripts/MoveBasic.cs)
 
-[script van tutorial 2](myFirstUnityGame/Assets/Scripts/Animate.cs)
+[2e script van tutorial 2](myFirstUnityGame/Assets/Scripts/Animate.cs)
+
+tutorial 3 
+
+![ezgif-2f0ee9391de172](https://github.com/user-attachments/assets/cdb2c6e8-ed08-4ea3-9886-b6288546bd3a)
+
+[1e script van tutorial 3](myFirstUnityGame/Assets/Scripts/MoveBasic.cs)
+
+[2e script van tutorial 3](myFirstUnityGame/Assets/Scripts/Jump.cs)
+
+tutorial 4 
+
+![ezgif-768c614044cf5e](https://github.com/user-attachments/assets/4a9189ab-7eb4-47a5-90fd-82e3d87a6fae)
+
+
+[1e script van tutorial 4](myFirstUnityGame/Assets/Scripts/MoveBasic.cs)
+
+[2e script van tutorial 4](myFirstUnityGame/Assets/Scripts/Jump.cs)
+
+
+
+
+
+
