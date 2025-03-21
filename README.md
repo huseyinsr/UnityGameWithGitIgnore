@@ -26,3 +26,18 @@ tutorial 3
 [1e script van tutorial 3](myFirstUnityGame/Assets/Scripts/MoveBasic.cs)
 
 [2e script van tutorial 3](myFirstUnityGame/Assets/Scripts/Jump.cs)
+
+tutorial 4 
+
+![ezgif-768c614044cf5e](https://github.com/user-attachments/assets/4a9189ab-7eb4-47a5-90fd-82e3d87a6fae)
+
+
+[1e script van tutorial 4](myFirstUnityGame/Assets/Scripts/MoveBasic.cs)
+
+[2e script van tutorial 4](myFirstUnityGame/Assets/Scripts/Jump.cs)
+
+
+
+
+
+
