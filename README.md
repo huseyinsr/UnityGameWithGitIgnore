@@ -25,4 +25,4 @@ tutorial 3
 
 [1e script van tutorial 3](myFirstUnityGame/Assets/Scripts/MoveBasic.cs)
 
-[2e script van tutorial 3](myFirstUnityGame/Assets/Scripts/Animate.cs)
+[2e script van tutorial 3](myFirstUnityGame/Assets/Scripts/Jump.cs)
