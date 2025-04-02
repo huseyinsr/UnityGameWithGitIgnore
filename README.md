@@ -44,7 +44,7 @@ tutorial 5
 
 [2e script van tutorial 5](myFirstUnityGame/Assets/Scripts/MoveBullet.cs)
 
-[3e script van tutorial 5(myFirstUnityGame/Assets/Scripts/GetPickup.cs)
+[3e script van tutorial 5](myFirstUnityGame/Assets/Scripts/KillOnHit.cs)
 
 
 
