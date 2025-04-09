@@ -46,6 +46,18 @@ tutorial 5
 
 [3e script van tutorial 5](myFirstUnityGame/Assets/Scripts/KillOnHit.cs)
 
+tutorial 6
+
+![ezgif-31bd3d66dd4f89](https://github.com/user-attachments/assets/a0166b4e-820e-4a0c-bcf1-cd1956a1047b)
+
+[1e script van tutorial 6](myFirstUnityGame/Assets/Scripts/EnemyShootingBehaviour.cs)
+
+[2e script van tutorial 6](myFirstUnityGame/Assets/Scripts/TriggerAnimation.cs)
+
+[3e script van tutorial 6](myFirstUnityGame/Assets/Scripts/Hearts.cs)
+
+
+
 
 
 
