@@ -5063,5 +5063,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cabd4d82faa90bf4a91b47dd61da6e3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetTag: Enemy
+  targetTag: Player
   effect: {fileID: 9169025554371383632, guid: 8ffe77d67b093564bbb480527c141fc4, type: 3}

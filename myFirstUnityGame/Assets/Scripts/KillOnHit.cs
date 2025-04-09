@@ -2,45 +2,70 @@ using UnityEngine;
 
 public class KillOnHit : MonoBehaviour
 {
-    public string targetTag; // Tag van het object dat moet exploderen
+    public string targetTag; // Tag van het object dat vernietigd kan worden
     public GameObject effect; // Explosie effect prefab
     private AudioSource audioSource;
+    private Hearts heartsScript; // Referentie naar het Hearts-script
 
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-
-        // Controleer of de opgegeven tag bestaat
-        bool tagFound = false;
-        foreach (string tag in UnityEditorInternal.InternalEditorUtility.tags)
-        {
-            if (targetTag == tag)
-            {
-                tagFound = true;
-                break;
-            }
-        }
-        if (!tagFound)
-        {
-            Debug.LogError("TargetTag: " + targetTag + " for `KillOnHit` @ " + gameObject.name + " not found!");
-        }
     }
 
     private void OnCollisionEnter(Collision coll)
-    {       
-        HandleCollision(coll.gameObject);
+    {
+        HandleHit(coll.gameObject);
     }
 
+    private void OnTriggerEnter(Collider coll)
+    {
+        HandleHit(coll.gameObject);
+    }
 
+    private void HandleHit(GameObject other)
+    {
+        if (other.CompareTag(targetTag))
+        {
+            // Explosie effect instantiëren
+            if (effect != null)
+            {
+                GameObject expl = Instantiate(effect, other.transform.position, Quaternion.identity);
+                Destroy(expl, 2f);
+            }
 
-    private void HandleCollision(GameObject other)
-    {      
-        if (other.tag == targetTag)
-        {        
-            GameObject expl = Instantiate(effect, transform.position, transform.rotation); // Instantieer explosie
-            Destroy(expl, 2f); // Verwijder explosie na 2 seconden
-            Destroy(other, 0.1f); // Verwijder geraakt object
-            audioSource.Play(); // Speel explosie geluid af
+            // Controle of het doelwit de speler is
+            if (targetTag == "Player")
+            {
+                if (heartsScript == null)
+                {
+                    heartsScript = FindObjectOfType<Hearts>();
+                }
+
+                if (heartsScript != null)
+                {
+                    heartsScript.Lives--; // Leven verwijderen
+
+                    // Controleer of de speler geen levens meer heeft
+                    if (heartsScript.Lives <= 0)
+                    {
+                        Destroy(other, 0.1f);
+                    }
+                }
+                else
+                {
+                    Debug.LogWarning("Hearts script niet gevonden! Zorg dat het in de scene aanwezig is.");
+                }
+            }
+            else
+            {
+                Destroy(other, 0.1f);
+            }
+
+            // Speel geluid af indien aanwezig
+            if (audioSource != null)
+            {
+                audioSource.Play();
+            }
         }
     }
 }

@@ -1,19 +1,43 @@
 using UnityEngine;
+using System.Collections;
 
 public class Shoot : MonoBehaviour
 {
-    public GameObject prefab; // Sleep hier je bullet prefab in via de Unity Inspector
+    public KeyCode shootKey = KeyCode.LeftControl; 
+    public GameObject prefab; 
+    public float delay = 0.5f; 
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftControl)) // Controleert of de linker Ctrl-toets wordt ingedrukt
+        if (Input.GetKeyDown(shootKey))
         {
-            GameObject ob = Instantiate(prefab); // Instantiate de kogel prefab
-           
-            ob.transform.rotation = transform.rotation; // Zet de rotatie gelijk aan de speler
-            ob.transform.position = transform.position + transform.forward; // Zet de positie gelijk aan de speler
+            CallShot();
+        }
+    }
 
-            Destroy(ob, 3f); // Verwijder de kogel na 3 seconden
+    public void CallShot()
+    {
+        StartCoroutine(AwaitDelay(delay));
+    }
+
+    private IEnumerator AwaitDelay(float time)
+    {
+        yield return new WaitForSeconds(time);
+        CreateProjectile();
+    }
+
+    private void CreateProjectile()
+    {
+        if (prefab != null)
+        {
+            GameObject projectile = Instantiate(prefab, transform.position , transform.rotation);
+
+
+            Destroy(projectile, 3f);
+        }
+        else
+        {
+            Debug.LogWarning("Prefab niet ingesteld in de inspector!");
         }
     }
 }
