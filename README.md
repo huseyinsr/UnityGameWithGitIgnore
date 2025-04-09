@@ -36,6 +36,19 @@ tutorial 4
 
 [2e script van tutorial 4](myFirstUnityGame/Assets/Scripts/KeepScore.cs)
 
+tutorial 5
+
+![ezgif-4cd5695a97c8d2](https://github.com/user-attachments/assets/ebbb2044-ff65-4556-a568-1b1c50fb6229)
+
+[1e script van tutorial 5](myFirstUnityGame/Assets/Scripts/Shoot.cs)
+
+[2e script van tutorial 5](myFirstUnityGame/Assets/Scripts/MoveBullet.cs)
+
+[3e script van tutorial 5](myFirstUnityGame/Assets/Scripts/KillOnHit.cs)
+
+
+
+
 
 
 
