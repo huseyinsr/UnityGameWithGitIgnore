@@ -56,6 +56,13 @@ tutorial 6
 
 [3e script van tutorial 6](myFirstUnityGame/Assets/Scripts/Hearts.cs)
 
+tutorial 8
+
+![ezgif-650a2ff76992d1](https://github.com/user-attachments/assets/794f3627-9958-4c03-a4eb-2c62a0627c5c)
+
+[1e script van tutorial 8](myFirstUnityGame/Assets/Scripts/TrapTrigger.cs)
+
+
 
 
 
